@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Spam</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+	function checkSpam(text)
+	{
+		if ((text.indexOf('Spam') + 1) || (text.indexOf('Sex') + 1) || (text.indexOf('sex') + 1) || (text.indexOf('spam') + 1) || (text.indexOf('SPAM') + 1) || (text.indexOf('SEX') + 1))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	var res = prompt('Введите текст на проверку спама');
+	document.write(checkSpam(res));
+
+	</script>
+</body>
+</html>
