@@ -7,7 +7,21 @@
 <body>
 	<script type="text/javascript">
 		
-		
+		function fib(n)
+		{
+			if (n > 2)
+			{
+				return fib(n - 1) + fib(n - 2);
+			}
+			else 
+			{
+				return 1;
+			}
+		}
+
+		var res = +prompt('Введите число болше нуля, для вычисления последовательности Фибоначчи');
+		document.write(fib(res));
+
 	</script>
 </body>
 </html>
