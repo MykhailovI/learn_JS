@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Строка с заглавным первым символом</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+	function upperFirst(text)
+	{
+		var big = text.substring(0, 1);
+		var small = text.substring(1);
+		big = big.toUpperCase();
+		text = big + small;
+		return text;
+	}
+
+	var text = prompt('Введите строку');
+	document.write(upperFirst(text));
+
+	</script>
+</body>
+</html>

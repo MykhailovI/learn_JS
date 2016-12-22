@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Шахматы2</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+var i, j;
+var str = "";
+var res = +prompt('Введите размеры шахматной доски');
+
+for (i = 1; i <= res; i++)
+  {
+    if (i % 2)
+    {
+    for (j = 1; j <= res; j++)
+      {
+        if (j % 2)
+          {
+            str += '#';
+          }
+        else 
+          {
+            str += '&nbsp;';
+          }
+      }
+   document.write(str + '<br />');
+   str = "";
+    }
+    else 
+      {
+        for (j = 1; j <= res; j++)
+      {
+        if (j % 2)
+          {
+            str += '&nbsp;';
+          }
+        else 
+          {
+            str += '#';
+          }
+      }
+   document.write(str + '<br />');
+   str = "";
+      }
+  }
+
+	
+</script>
+</body>
+</html>

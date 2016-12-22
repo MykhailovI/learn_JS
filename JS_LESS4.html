@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Генератор случайных чисел</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+	function getRandomInt(min, max) 
+	{
+  		return Math.floor(min + Math.random() * (max - min));
+	}
+
+	var min = +prompt('Введите начало интервала');
+	var max = +prompt('Введите конец интервала');
+
+	document.write(getRandomInt(min, max));
+
+	</script>
+</body>
+</html>
