@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var user = {};
+
+		user.name = 'Sergey';
+		user.surname = 'Petrov';
+		user.name = 'Andrey';
+		user.age = 30;
+
+		delete user.name;
+
+		for (item in user) 
+		{
+			document.write(item + ':' + user[item] + '<br />');
+		}
+	</script>
+</body>
+</html>

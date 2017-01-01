@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+	function factNumb(n)
+	{
+		if (n != 1) 
+			{
+				return n * factNumb(n-1);
+			}
+			else
+			{
+				return n;
+			}
+	}
+
+	var res = +prompt('Введите положительное, не нулевое число для вычисления факториала');
+	document.write(factNumb(res)); 
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+	var salaries = {
+		'junior': 1000,
+		'middle': 2500,
+		'senior': 3500,
+		'lead': 5000
+	};
+
+	function Sale(obj)
+	{	var rez = 0;
+		for (var key in obj)
+		{	
+			rez += obj[key];
+		}
+		return rez;
+	}
+
+	document.write(Sale(salaries));
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		function sumTo(n)
+		{
+			if (n != 1) 
+			{
+				return n + sumTo(n-1);
+			}
+			else
+			{
+				return n;
+			}
+		}
+
+		var res = +prompt('Введите число n, для вычисления суммы чисел от 1 до n');
+		document.write(sumTo(res));
+
+	</script>
+</body>
+</html>

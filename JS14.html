@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function min(a, b) {
+			if (a < b) {
+				return a;
+			}
+			if (a > b) {
+				return b;
+			}
+			else {
+				alert('Числа равны!');
+				return false; 
+			}
+			
+		}
+
+		var result1 = +prompt('Введите число а');
+		var result2 = +prompt('Введите число b');
+
+		document.write('Наименьшее число ' + min(result1, result2));		
+	</script>
+</body>
+</html>

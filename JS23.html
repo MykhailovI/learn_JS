@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		function isEmpty(obj)
+		{
+			
+			for (var key in obj) 
+			{
+				return false;
+			}
+			return true;
+			
+			
+		}
+
+		var todoList = {};
+		console.log(isEmpty(todoList));
+
+		todoList['homework'] = 'lesson5';
+		console.log(isEmpty(todoList));
+
+	</script>
+</body>
+</html>
