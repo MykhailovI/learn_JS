@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Функция, принимающая массив и выводящая последний элемент массива</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+	function lastElement(arr) 
+	{
+
+		var arr = [];
+
+		for (var i = 0; i < size; i++)
+		{
+			arr[i] = prompt('Введите ' + i + ' элемент массива');
+		}
+
+		return document.write('Последний элемент массива - ' + arr.pop());
+	}
+
+	var size = prompt('Введите кол-во элементов массива');
+	lastElement(size);
+
+	</script>
+</body>
+</html>

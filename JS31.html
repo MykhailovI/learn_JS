@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+	var tasksCompleted = {
+		'Anna': 29,
+		'Serg': 35,
+		'Elena': 1,
+		'Anton': 99
+	};
+
+	var max = 0;
+	var maxName = "";
+
+	for (var name in tasksCompleted)
+	{
+		if (max < tasksCompleted[name])
+		{
+			max = tasksCompleted[name];
+			maxName = name;
+		}
+	}
+
+
+	document.write('Сотрудник, выполнивший наибольшее кол-во задач - ' + maxName);
+	
+	
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Функция, принимающая массив и добавляющая последний элемент массива</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+	function addMass(arr, elem)
+	{
+		var arr = [];
+
+		for (var i = 0; i < size; i++)
+		{
+			arr[i] = prompt('Введите ' + i + ' элемент массива');
+		}
+		
+		arr.push(elem);
+
+		return document.write(arr);
+	}	
+
+	var size = prompt('Введите кол-во элементов вложенного массива');
+	var elem = prompt('Введите дополнительный элемент');
+	addMass(size, elem);
+
+	</script>
+</body>
+</html>
