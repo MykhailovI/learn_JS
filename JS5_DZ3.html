@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+	
+	var massIv = [];
+
+	while (true) {
+		var value = prompt('Введите чсило');
+		if (value === "" || value === null || isNaN(value)) break;
+		massIv.push(+value);
+	}
+
+	var sum = 0;
+	for (var i = 0; i < massIv.length; i++) {
+		sum += massIv[i];
+	}
+
+	document.write('Массив = ' + massIv + '<br />');
+	document.write('Сумма числовых элементов массива = ' + sum);
+	</script>
+</body>
+</html>
