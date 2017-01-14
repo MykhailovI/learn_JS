@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Функция, возвращающая сумму любого кол-ва передаваемых аргументов</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+	function sum(arr) {
+		var sum = 0;
+
+		for (var i = 0; i < arguments.length; i++)
+		{
+			sum += arguments[i];
+		}
+		return sum;
+	}
+	document.write(sum(1, 2, 3, 4, 5));
+
+
+	</script>
+</body>
+</html>
