@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Создание определенной даты для местной временной зоны + получение дня недели из указанной даты</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+	var date = new Date(2015, 1, 25, 2, 17);
+
+	document.write(date + '<br />');
+
+	function getWeekDay(date) {
+
+		var data = date.getDay();
+		switch (data) {
+			case 0:
+			document.write('воскресенье');
+			break;
+			case 1:
+			document.write('понедельник');
+			break;
+			case 2:
+			document.write('вторник');
+			break;
+			case 3:
+			document.write('среда');
+			break;
+			case 4:
+			document.write('четверг');
+			break;
+			case 5:
+			document.write('пятница');
+			break;
+			case 6:
+			document.write('суббота');
+			break;
+			default:
+			document.write('нет такого дня недели');
+		}
+	}
+
+	var date = new Date(2012, 0, 3);
+	getWeekDay(date);
+
+
+	//вариант с использованием массивов:
+	//function getWeekDay(date) {
+  	//	var days = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+
+  	//		return days[date.getDay()];
+	//	}
+
+	//	var date = new Date(2014, 0, 3); 
+	//	alert( getWeekDay(date) );
+	</script>
+</body>
+</html>

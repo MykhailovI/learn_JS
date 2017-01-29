@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Уникальные элементы массива</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+	function unique(arr) {
+  		var result = [];
+
+		  nextInput:
+		    for (var i = 0; i < arr.length; i++) {
+		      var str = arr[i]; // для каждого элемента
+		      for (var j = 0; j < result.length; j++) { // ищем, был ли он уже
+		        if (result[j] == str) continue nextInput; // если да, то следующий
+		      }
+		      result.push(str);
+		    }
+
+		  return result;
+}
+
+	var strings = ['кришна', 'кришна', 'харе', 'харе', 'харе', 'харе', 'кришна', 'кришна', '8-()'];
+	document.write(unique(strings));
+
+
+	</script>
+</body>
+</html>
